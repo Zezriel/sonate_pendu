@@ -68,19 +68,8 @@ def play():
 
             vie -= 1
         if vie == 0:
-            return render_template("/loss", mot = mot)
+            return render_template("loss.html", mot = mot)
         
         if "_" not in indice:
-            return render_template("/won", mot = mot)
+            return render_template("win.html", mot = mot)
         return render_template("play.html",indice = indice,mot = mot, vie = vie)
-
-
-
-
-@app.route("/loss", methods=["GET"])
-def loss():
-    return render_template("loss.html")
-
-@app.route("/won", methods=["GET"])
-def won():
-    return render_template("won.html")
