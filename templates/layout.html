@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Sonate | Jeu du pendu{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        button{
+            border-radius: 50px;
+            size: 100px;
+        }
+    </style>
 </head>
 <body>
     {% block content %}{% endblock %}

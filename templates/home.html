@@ -4,5 +4,13 @@
 
 {% block content %}
   <p>Contenu page d'accueil</p>
-  <a href="/play" name="Jouer">Jouer</a>
+
+
+  <form action="/play" method="post">
+    <label>Nom</label>
+    <input type="text" id="player_name" name="player_name" required />
+  
+    <button type="submit">Jouer<a href="/play"></a></button>
+  </form>
+
 {% endblock %}
