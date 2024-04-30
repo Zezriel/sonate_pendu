@@ -3,7 +3,7 @@
 {% block title %}jeu | Jeu du pendu{% endblock %}
 
 {% block content %}
-
+<main>
   <h1>Pendu {{ mot }}</h1>
   <p>Vie {{ vie }}/5</p>
   <p id="indice"> {{ indice }}</p>
@@ -14,6 +14,6 @@
   <button type="submit" name="letter" value="s">S</button><button type="submit" name="letter" value="t">T</button><button type="submit" name="letter" value="u">U</button><button type="submit" name="letter" value="v">V</button><button type="submit" name="letter" value="w">W</button><button type="submit" name="letter" value="x">X</button><br>
   <button type="submit" name="letter" value="y">Y</button><button type="submit" name="letter" value="z">Z</button>
   </form>
-
+</main>
 
 {% endblock %}
