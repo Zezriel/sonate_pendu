@@ -72,9 +72,7 @@ rdm = randint(0,len(liste))
 mot = liste[rdm].split(";")
 mot = mot[0]
 mot_decode = unidecode(mot)
-
 vie = 5
-print(mot)
 
 liste_indice = []
 for x in range(len(mot)):
