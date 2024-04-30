@@ -1,5 +1,4 @@
 from random import randint
-import time
 import os
 from unidecode import unidecode
 
@@ -75,7 +74,7 @@ mot = mot[0]
 mot_decode = unidecode(mot)
 
 vie = 5
-
+print(mot)
 
 liste_indice = []
 for x in range(len(mot)):
@@ -83,6 +82,9 @@ for x in range(len(mot)):
 main = True
 while main:
     indice = "".join(liste_indice)
+    if "_" not in indice:
+        print("Gagner!")
+        break
     print(pendu[vie])
     print(indice)
     player_input = input("\n\nChoisisser une lettre: ")
@@ -93,9 +95,8 @@ while main:
             liste_indice[x] = mot[x]
     else:
         vie -= 1
-    if vie == 0:
-        print("Perdu!")
-        main = False
 
-    
-    
+    if vie == 0:
+        print(pendu[0])
+        print("Perdu!")
+        break
