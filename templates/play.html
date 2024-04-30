@@ -5,12 +5,14 @@
 {% block content %}
 
   <h1>Pendu</h1>
-  
-  <button>A</button><button>B</button><button>C</button><button>D</button><button>E</button><button>F</button><br>
-  <button>G</button><button>H</button><button>I</button><button>J</button><button>K</button><button>L</button><br>
-  <button>M</button><button>N</button><button>O</button><button>P</button><button>Q</button><button>R</button><br>
-  <button>S</button><button>T</button><button>U</button><button>V</button><button>W</button><button>X</button><br>
-  <button>Y</button><button>Z</button>
+  <p id="indice"> {{ indice }}</p>
+  <form action="/button_click" method="post">
+  <button type="submit" name="letter" value="a">A</button><button type="submit" name="letter" value="b">B</button><button type="submit" name="letter" value="c">C</button><button type="submit" name="letter" value="d">D</button><button type="submit" name="letter" value="e">E</button><button type="submit" name="letter" value="f">F</button><br>
+  <button type="submit" name="letter" value="g">G</button><button type="submit" name="letter" value="h">H</button><button type="submit" name="letter" value="i">I</button><button type="submit" name="letter" value="j">J</button><button type="submit" name="letter" value="k">K</button><button type="submit" name="letter" value="l">L</button><br>
+  <button type="submit" name="letter" value="m">M</button><button type="submit" name="letter" value="n">N</button><button type="submit" name="letter" value="o">O</button><button type="submit" name="letter" value="p">P</button><button type="submit" name="letter" value="q">Q</button><button type="submit" name="letter" value="r">R</button><br>
+  <button type="submit" name="letter" value="s">S</button><button type="submit" name="letter" value="t">T</button><button type="submit" name="letter" value="u">U</button><button type="submit" name="letter" value="v">V</button><button type="submit" name="letter" value="w">W</button><button type="submit" name="letter" value="x">X</button><br>
+  <button type="submit" name="letter" value="y">Y</button><button type="submit" name="letter" value="z">Z</button>
+  </form>
 
 
 {% endblock %}
