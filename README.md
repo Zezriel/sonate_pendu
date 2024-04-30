@@ -62,7 +62,7 @@ def home():
 Notre fichier Python s'appelant `server.py`, on peut lancer l'application avec la commande suivante : 
 
 ```shell
-flask --app server run
+python -m flask --app server run
 ```
 
 Le terminal doit afficher un message attestant que le serveur local à bien démarré :
