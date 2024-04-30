@@ -6,11 +6,12 @@
   <p>Contenu page d'accueil</p>
 
 
-  <form action="/play" method="post">
+  <form action="/play" method="get">
     <label>Nom</label>
     <input type="text" id="player_name" name="player_name" required />
   
-    <button type="submit">Jouer<a href="/play"></a></button>
+
+    <button type="submit" methode="get">Jouer<a href="/play"></a></button>
   </form>
 
 {% endblock %}
