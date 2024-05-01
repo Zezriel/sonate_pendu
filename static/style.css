@@ -13,6 +13,8 @@ body{
     background: linear-gradient(50deg,#564787,#DBCBD8,#101935);
     height: 100vh;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 main{
 
