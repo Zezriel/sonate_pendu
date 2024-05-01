@@ -14,6 +14,21 @@
   <button type="submit" name="letter" value="s">S</button><button type="submit" name="letter" value="t">T</button><button type="submit" name="letter" value="u">U</button><button type="submit" name="letter" value="v">V</button><button type="submit" name="letter" value="w">W</button><button type="submit" name="letter" value="x">X</button><br>
   <button type="submit" name="letter" value="y">Y</button><button type="submit" name="letter" value="z">Z</button>
   </form>
+
+
+  {% if vie == 5 %}
+        <img class="pendu" src="/static/images/pendu5.png">
+  {% elif vie == 4 %}
+        <img class="pendu" src="/static/images/pendu4.png">
+  {% elif vie == 3 %}
+        <img class="pendu" src="/static/images/pendu3.png">
+  {% elif vie == 2 %}
+        <img class="pendu" src="/static/images/pendu2.png">
+  {% elif vie == 1 %}
+        <img class="pendu" src="/static/images/pendu1.png">
+  {% elif vie == 0 %}
+        <img class="pendu" src="/static/images/pendu0.png">
+  {% endif %}
 </main>
 
 {% endblock %}

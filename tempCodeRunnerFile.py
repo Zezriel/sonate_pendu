@@ -1,1 +1,0 @@
-rdm = int(random()*1461)

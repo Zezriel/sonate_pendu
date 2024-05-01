@@ -67,9 +67,9 @@ def play():
         else:
 
             vie -= 1
-        if vie == 0:
-            return render_template("loss.html", mot = mot)
+        if vie <= 0:
+            return render_template("end.html",vie = vie, mot = mot,message_fin = "Perdu!")
         
         if "_" not in indice:
-            return render_template("win.html", mot = mot)
+            return render_template("end.html",vie = vie, mot = mot,message_fin = "Gagner!")
         return render_template("play.html",indice = indice,mot = mot, vie = vie)
