@@ -10,9 +10,6 @@ app = Flask(__name__)
 
 
 
-
-
-
 @app.route("/", methods=["GET","POST"])
 def home():
     if request.method == "POST":
@@ -53,7 +50,7 @@ def play():
             liste_indice.append("_")
         global indice
         indice = "".join(liste_indice)
-        return render_template("play.html",indice = indice,mot = mot, vie = vie)
+        return render_template("play.html",indice = indice, vie = vie)
         
 
     if request.method == "POST":
@@ -72,4 +69,7 @@ def play():
         
         if "_" not in indice:
             return render_template("end.html",vie = vie, mot = mot,message_fin = "Gagner!")
-        return render_template("play.html",indice = indice,mot = mot, vie = vie)
+        return render_template("play.html",indice = indice, vie = vie)
+    
+
+

@@ -4,8 +4,21 @@
 
 {% block content %}
 <main>
-  <h1>Pendu {{ mot }}</h1>
-  <p>Vie {{ vie }}/5</p>
+  <h1>Sonate Pendu</h1>
+
+  {% if vie == 5 %}
+  <img class="pendu" src="/static/images/pendu5.png">
+{% elif vie == 4 %}
+  <img class="pendu" src="/static/images/pendu4.png">
+{% elif vie == 3 %}
+  <img class="pendu" src="/static/images/pendu3.png">
+{% elif vie == 2 %}
+  <img class="pendu" src="/static/images/pendu2.png">
+{% elif vie == 1 %}
+  <img class="pendu" src="/static/images/pendu1.png">
+{% elif vie == 0 %}
+  <img class="pendu" src="/static/images/pendu0.png">
+{% endif %}
   <p id="indice"> {{ indice }}</p>
   <form action="/play" method="post">
   <button type="submit" name="letter" value="a">A</button><button type="submit" name="letter" value="b">B</button><button type="submit" name="letter" value="c">C</button><button type="submit" name="letter" value="d">D</button><button type="submit" name="letter" value="e">E</button><button type="submit" name="letter" value="f">F</button><br>
@@ -16,19 +29,7 @@
   </form>
 
 
-  {% if vie == 5 %}
-        <img class="pendu" src="/static/images/pendu5.png">
-  {% elif vie == 4 %}
-        <img class="pendu" src="/static/images/pendu4.png">
-  {% elif vie == 3 %}
-        <img class="pendu" src="/static/images/pendu3.png">
-  {% elif vie == 2 %}
-        <img class="pendu" src="/static/images/pendu2.png">
-  {% elif vie == 1 %}
-        <img class="pendu" src="/static/images/pendu1.png">
-  {% elif vie == 0 %}
-        <img class="pendu" src="/static/images/pendu0.png">
-  {% endif %}
+
 </main>
 
 {% endblock %}
