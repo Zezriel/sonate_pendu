@@ -29,6 +29,7 @@ main{
 
 form{
     padding-right: 0px;
+    
 }
 
 button{
@@ -63,4 +64,8 @@ button:hover{
 #replay{
     height: 45px;
     width: fit-content;
+    border-radius: 10px;
+}
+#player_name{
+    color: #0D0221;
 }
