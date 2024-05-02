@@ -70,6 +70,7 @@ button:hover{
 
 #play_button{
     width: fit-content;
+    border-radius: 10px;
 }
 
 #replay{
